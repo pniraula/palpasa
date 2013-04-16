@@ -111,6 +111,7 @@ $autoload['language'] = array();
 
 $autoload['model'] = array();
 
-
+//for url helper
+$autoload['helper'] = array('url');
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

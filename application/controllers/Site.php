@@ -8,7 +8,8 @@ class Site extends CI_Controller {
 		$data['title'] = "Home";
 		$this->load->model('Test');
 		$data['content'] = $this->Test->show();
-		$this->load->view('view_header.php',$data);
+		$this->load->view('view_header.php');
+		$this->load->view('view_navigation.php');
 		$this->load->view('view_home.php');
 		$this->load->view('view_footer.php');
 	}

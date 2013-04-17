@@ -1,7 +1,4 @@
 <?php
-	/**
-	 * 
-	 */
 	class Test extends CI_Model {
 		
 		public function show(){

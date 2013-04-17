@@ -1,8 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Palpasa | <?=$title?></title>
-	<script type="text/javascript" src="<?php echo base_url();?>assets/js/libraries/jquery-1.9.1.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Palpasa.com</title>
+<link href="<?=base_url();?>assets/css/main.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
+
+<div id="wrapper">
+	<div id="top"></div>

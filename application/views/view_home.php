@@ -1,11 +1,13 @@
-
-
-<div id="container">
-	<h1>Welcome to my site</h1>
-	<div>
-		<?=$content?>
-		<a href="about">about</a>
-	</div>
+<div class="content_area">
+		<div id="left-panel">
+			<div id="control-wrapper">
+			
+			</div>
+			<div id="station-wrapper">
+			
+			</div>
+		</div>
+		<div id="right-panel">
+		
+		</div>
 </div>
-<!--page specific required javascripts-->
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/welcome.js"></script>

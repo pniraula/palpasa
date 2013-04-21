@@ -1,0 +1,14 @@
+#controller-wrapper{
+	text-align: center;
+}
+.controller-icon{
+	margin-top: 5px;
+	height: 30px;
+	cursor: pointer;
+}
+.controller-icon:hover{
+	opacity: 0.5;
+}
+.controller-icon:active{
+	opacity: 0.1;
+}

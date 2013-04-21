@@ -4,8 +4,16 @@
 	 */
 	class Test extends CI_Model {
 		
-		public function show(){
-			return "I am from the model";
+		function __construct() {
+        	parent::__construct();
+			$this->load->database();
+		}
+		public function show($limit){
+			$query = $this->db->query("select * from song LIMIT $limit");
+			foreach($query->result() as $row)
+			{
+			  echo $row->SONG_NAME.'<br>';
+			}
 		}
 	}
 	

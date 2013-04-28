@@ -5,15 +5,35 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	color: #666;
+	color: #525252;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.5em; 
 	background-color: #cccccc;
 	background-repeat: repeat-x;
 	background-position: top;
+	scrollbar-arrow-color: #525252;
+	scrollbar-track-color: #525252;
+	scrollbar-face-color: #525252;
+	scrollbar-highlight-color: #777777;
+	scrollbar-3dlight-color: #525252;
+	scrollbar-shadow-color: #777777;
+	scrollbar-darkshadow-color: #525252;
+}
+::-webkit-scrollbar {
+width: 15px;
+height: 15px;
 }
 
+
+::-webkit-scrollbar-track-piece  {
+background-color: #525252;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+height: 30px;
+background-color: #777777;
+}
 a, a:link, a:visited { color: #06C; text-decoration: none; }
 a:hover { color: #C00; text-decoration: underline; }
 
@@ -29,46 +49,34 @@ h5 { font-size: 16px; margin: 0 0 10px 0; padding: 0; }
 h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0; }
 
 cite { font-weight: bold; color:#333; }
-cite span { color: #666; }
+cite span { color: #525252; }
 
 
 
 #wrapper {
-	width: 940px;
-	padding: 10px;
+	width: 840px;
+	padding: 0px;
 	margin: 0 auto;
-}
-
-#top {
-	width: 100%;
-	height: 15px;
-}
-
-#contact_form form .submit_button { 
-	color: #666;
-	background: #FFF;
-	border: 1px solid #CCC;
-	padding: 8px 18px;
-	font-weight: bold;
 }
 
 
 /* footer */
 #footer {
-	width: 940px;
+	width: 840px;
 	font-size: 11px;
 	text-align: center;
 	color: #777;
-	background: url(<?=$dir?>/footer.jpg) top no-repeat;
 	padding: 30px 0 10px 0;
+	margin-top: -30px;
 }
 
 #footer a { color: #444; }
 
 
 #header {
-	width: 960px;
+	width: 840px;
 	height: 100px;
+	margin-top: -10px;
 	background: url(<?=$dir?>/header.jpg) no-repeat;	
 	z-index: 4;
 }
@@ -107,8 +115,8 @@ cite span { color: #666; }
 
 
 .content_area {
-    height: 480px;
-    width: 940px;
+    height: 530px;
+    width: 840px;
     overflow: auto;
     position: relative;
     clear: left;
@@ -123,7 +131,7 @@ cite span { color: #666; }
 
 ul.navigation {
 	float: left;
-	width: 560px;
+	width: 480px;
 	height: 40px;
     list-style: none;
     margin: 22px 0 0 0;
@@ -151,7 +159,6 @@ ul.navigation a {
 
 ul.navigation a:hover, ul.navigation a.selected {
 	color: #000;
-	background: url('<?=$dir?>/menu_hover.jpg') no-repeat;
 }
 
 ul.navigation a:focus {
@@ -178,18 +185,41 @@ ul.navigation a:focus {
 
 
 #left-panel{
-	height: 478px;
-	width: 300px;
+	height: 100%;
+	width: 200px;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	border-right: 1px solid #C0C0C0	;
+	background-color:#525252;
 }
+
 #right-panel{
-	margin-left: 300px;
-	margin-top: -478px;
+	margin-left: 200px;
+	margin-top: -530px;
 	height: 478px;
 	width: 640px;
 }
-
-#station-wrapper{
-
+#searchBox{
+	position:absolute;
+	margin-top: 8px;
+	left: -299px;
+	color:#AAA;
+	background-color: #303030;
+	border: 1px solid #444444;
+	border-style: inset;
+	z-index: 9;
 }
+#searchInput{
+	width: 124px;
+	height: 20px;
+	color:#888888;
+	text-align: left;
+	background-color: #494949;
+	border: none;
+}
+input:focus{
+    outline: none;
+}
+
+
 </style>

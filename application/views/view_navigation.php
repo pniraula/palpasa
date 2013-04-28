@@ -6,6 +6,6 @@
 			<li><a>Now Playing</a></li>
 			<li><a>Settings</a></li>
 			<li><a>About Us</a></li>
-			<li><a>Contact</a></li>
+			<li><a>Contact Us</a></li>
 		</ul>		
 </div>

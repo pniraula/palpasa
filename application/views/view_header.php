@@ -5,8 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="<?=base_url()?>assets/js/libraries/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/js/libraries/custom-query.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/js/libraries/jquery.nicescroll.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/js/infoBar.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/js/welcome.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/js/search.js"></script>
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/controller.css">
 <title>Palpasa.com</title>
 </head>
@@ -14,6 +17,10 @@
 
 <div id="wrapper">
 	<div id="controller-wrapper">
+		<div id="searchBox">
+				<label>New Station</label>
+				<input id="searchInput" type="text" autocomplete="on" value="type in artist or genre"/>
+			</div>
 		<div id="music_player">
 			<div id="music-controller">
 				<div id="controllers-icon">
@@ -30,4 +37,3 @@
 			</div>					
 		</div>	
 	</div>
-	<div id="top"></div>

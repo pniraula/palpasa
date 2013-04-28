@@ -6,4 +6,5 @@ $(document).ready(function(){
 			alert(data);
 		});
 	});
+	 $("#station-wrapper").niceScroll({cursorcolor:"#292929"});
 });

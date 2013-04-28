@@ -1,11 +1,31 @@
 
 <div class="content_area">
 		<div id="left-panel">
-			<div id="control-wrapper">
-				
-			</div>
 			<div id="station-wrapper">
-			
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+				<div class="station">name</div>
+			</div>
+			<div id="advertisement">
+				
 			</div>
 		</div>
 		<div id="right-panel">
@@ -24,7 +44,9 @@
 							</div>
 						</div>
 					</div>
-					
+					<div id="detail-info">
+						
+					</div>
 				</div>
 			</div>
 			<button id="add">add</button>

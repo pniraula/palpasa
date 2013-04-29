@@ -33,10 +33,10 @@
 			<div id="slidable">
 				<div id="songInfoBar-wrapper">
 					<div id="left-arrow">
-						<img class="arrow-icon" src="<?=base_url();?>assets/images/themes/mango/left-arrow.png"/>
+						<img class="arrow-icon" src="<?=base_url();?>assets/images/left-arrow.png"/>
 					</div>
 					<div id="right-arrow">
-						<img class="arrow-icon" src="<?=base_url();?>assets/images/themes/mango/right-arrow.png"/>
+						<img class="arrow-icon" src="<?=base_url();?>assets/images/right-arrow.png"/>
 					</div>
 					<div id="songCard-wrapper">
 						<div class="scrolls">

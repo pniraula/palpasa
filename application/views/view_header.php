@@ -11,16 +11,20 @@
 <script type="text/javascript" src="<?=base_url()?>assets/js/welcome.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/js/search.js"></script>
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/controller.css">
+<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/songbar.css">
 <title>Palpasa.com</title>
 </head>
 <body>
 
 <div id="wrapper">
 	<div id="controller-wrapper">
-		<div id="searchBox">
+		<div id="searchBox-wrapper">
+			<div id="searchBox">
 				<label>New Station</label>
 				<input id="searchInput" type="text" autocomplete="on" value="type in artist or genre"/>
 			</div>
+		</div>
 		<div id="music_player">
 			<div id="music-controller">
 				<div id="controllers-icon">

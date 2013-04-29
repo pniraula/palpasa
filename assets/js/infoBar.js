@@ -1,8 +1,4 @@
 $(document).ready(function(){
-	/*
-	 * This is the scroller object which is responsible for creating arrows, 
-	 * cards and controller.
-	 */
 	function Scroller(){
 		var scrolling = false;
 		this.leftArrow = $("#left-arrow");

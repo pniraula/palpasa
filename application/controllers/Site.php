@@ -5,10 +5,7 @@ class Site extends CI_Controller {
 		$this->load->view('view_index.php');
 		$this->load->view('view_footer.php');
 	}
-	public function home($name){
-		if(isset($name))
-			$themeName = $name;
-		else
+	public function home(){
 		$themeName = "grey";
 		$data['title'] = "Home";
 		$data['theme'] = $themeName;

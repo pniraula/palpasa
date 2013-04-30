@@ -14,47 +14,64 @@
 		<div id="index_container">
 			<div id="left-pane">
 				<div id="logo">
-					<img class="controller-icon" id="previous-icon" src="<?=base_url()?>/assets/images/logo.png">
+					<img src="<?=base_url()?>/assets/images/logo.png">
 				</div>
 				<div id="sign_in">
 					<label class="gen-label">Sign In</label>
-					<div class="input-wrap" id="username-wrap">
-						<label class="inputLabel">Username</label>
-						<input class="inputBox" id="usernameInput" type="text" autocomplete="on" value=""/>
-					</div>
-					<div class="input-wrap" id="password-wrap">
-						<label class="inputLabel">Password</label>
-						<input class="inputBox" id="passwordInput" type="text" autocomplete="on" value=""/>
-					</div>
-					<div id="botton-wrap">
-						<label class="index-link">forgot your password?</label><button id="sign-in" class="index-button">Sign In</button>
-					</div>
+					<table>
+						<tr class="cont">
+							<td><div class="inputLabel">Username</div></td>
+							<td><div class="input-wrap"><input class="inputBox" id="usernameInput" type="email" autocomplete="on" value=""/></div></td>
+						</tr>
+						<tr>
+							<td><div class="inputLabel">Password</div></td>
+							<td><input class="inputBox" id="passwordInput" type="password" autocomplete="off" value=""/></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="">
+									<label class="index-link">forgot password?</label>
+								</div>
+							</td>
+							<td><button id="sign-in" class="index-button">Sign In</button></td>
+						</tr>
+					</table>
 				</div>
 				<div id="sign_up">
 					<label class="gen-label">Sign Up</label>
-					<div class="input-wrap" id="username-wrap">
-						<label class="inputLabel">First Name</label>
-						<input class="inputBox" id="firstName" type="text" autocomplete="on" value=""/>
-					</div>
-					<div class="input-wrap" id="username-wrap">
-						<label class="inputLabel">Last Name</label>
-						<input class="inputBox" id="lastName" type="text" autocomplete="on" value=""/>
-					</div>
-					<div class="input-wrap" id="password-wrap">
-						<label class="inputLabel">Email Id</label>
-						<input class="inputBox" id="emailId" type="text" autocomplete="on" value=""/>
-					</div>
-					<div class="input-wrap" id="password-wrap">
-						<label class="inputLabel">Password</label>
-						<input class="inputBox" id="passwordInput" type="text" autocomplete="on" value=""/>
-					</div>
-					<div class="input-wrap" id="password-wrap">
-						<label class="inputLabel">Re-Password</label>
-						<input class="inputBox" id="re-passwordInput" type="text" autocomplete="on" value=""/>
-					</div>
-					<div id="botton-wrap">
-						<button class="index-button" id="clear">clear</button><button id="sign-up" class="index-button">Sign Up</button>
-					</div>
+					<table>
+						<tr class="cont">
+							<td><div class="inputLabel">First Name</div></td>
+							<td><div class="input-wrap"><input class="inputBox" id="firstnameInput" type="text" autocomplete="on" value=""/></div></td>
+						</tr>
+						<tr class="cont">
+							<td><div class="inputLabel">Last Name</div></td>
+							<td><div class="input-wrap"><input class="inputBox" id="lastnameInput" type="text" autocomplete="on" value=""/></div></td>
+						</tr>
+						<tr class="cont">
+							<td><div class="inputLabel">Email Id</div></td>
+							<td><div class="input-wrap"><input class="inputBox" id="emailidInput" type="email" autocomplete="on" value=""/></div></td>
+						</tr>
+						<tr class="cont">
+							<td><div class="inputLabel">Password</div></td>
+							<td><div class="input-wrap"><input class="inputBox" id="spasswordInput" type="password" autocomplete="off" value=""/></div></td>
+						</tr>
+						<tr>
+							<td><div class="inputLabel">Re-Password</div></td>
+							<td><input class="inputBox" id="srepasswordInput" type="password" autocomplete="off" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"/><label>I agree terms </label></td>
+							<td><label>and conditions of palpasa.com</label></td>
+						</tr>
+						<tr>
+							<td><button id="sign-in" class="index-button">Clear</button></td>
+							<td><button id="sign-in" class="index-button">Sign Up</button></td>
+						</tr>
+					</table>
+				</div>
+				<div id="left-panel-footer">
+					<div>Palpasa is a product of <a href="http://vumari.com">vumari</a>.</div>
 				</div>
 			</div>
 			<div id="right-pane">

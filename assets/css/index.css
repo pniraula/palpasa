@@ -19,22 +19,23 @@ a:hover { color: #292929; text-decoration: underline; }
 	height: 605px;
 	padding: 0px;
 	margin: 0 auto;
-	background-color: #525252;
+	background-color: #292929;
 }
 #logo{
 	width: 100%;
 	text-align: center;
+	height: 80px;
 }
 #sign_in{
-	margin-top: 20px;
 }
 #sign_up{
 	margin-top: 40px;
+	
 }
 #left-pane{
 	height: 100%;
 	width: 300px;
-	background-color: #292929;
+	background-color: #333333;
 	border-color: #888888;
 	border-style: outset;
 	border-top: none;
@@ -63,39 +64,44 @@ a:hover { color: #292929; text-decoration: underline; }
 	font-weight: bold;
 	font-size: 20px;	
 }
+.inputLabel{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background-color: #191919;
+	border: 1px solid #292929;
+	border-style: inset;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+}
 .input-wrap{
-	margin-top: 10px;
 	color:#AAA;
+	width: 100%;
 	font-size: 14px;
 	background-color: #303030;
-	border: 1px solid #444444;
+	border: 1px solid #292929;
 	border-style: inset;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
 	z-index: 9;
 }
 .inputBox{
-	width: 200px;
-	height: 30px;
+	width: 196px;
+	height: 28px;
 	color:#888888;
 	text-align: left;
-	margin-left: 33px;
 	font-size: 15px;
 	background-color: #494949;
 	border: none;
 }
-#firstName{
-	margin-left: 29px;
+table{
+	border-collapse: collapse;
+	margin-top: 10px;
 }
-#lastName{
-	margin-left: 30px;
-}
-#passwordInput{
-	margin-left: 36px;
-}
-#re-passwordInput{
-	margin-left: 15px;
-}
-#emailId{
-	margin-left: 44px;
+td{
+	min-width: 100px;
 }
 input:focus{
     outline: none;
@@ -113,13 +119,13 @@ input:focus{
 	font-family:arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:6px 58px;
+	width: 100%;
+	height: 100%;
+	min-height: 30px;
 	text-decoration:none;
 	text-shadow:1px 0px 50px #878787;
 	border: none;
-	margin-left: 5px;
 	cursor:pointer;
-	margin-top: 10px;
 }
 .index-button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #424242), color-stop(1, #525252) );
@@ -140,7 +146,7 @@ input:focus{
 	color: #AAAAAA;
 }
 #sign-up,#clear{
-	padding:6px 48px;
+	padding:6px 46px;
 }
 #radio-cont{
 	width: 100%;
@@ -158,4 +164,7 @@ input:focus{
 }
 .info-ico{
 	height: 60px;
+}
+#left-panel-footer{
+	margin-top: 80px;
 }

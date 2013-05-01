@@ -82,31 +82,11 @@ cite span { color: #525252; }
 	width: 240px;
 	height: 65px;
 	padding-top: 20px;
-	margin-right: 80px;
 	text-align: center;
 }
 
-#header #sitetite h1 {
-	margin: 0;
-	padding: 0;
-}
-
-#header #sitetite a {
-	margin: 0px;
-	padding: 0px;
-	font-size: 30px;
-	color: #edecec;
-	font-weight: normal;
-	text-decoration: none;
-}
-
-#header #sitetite a span {
-	display: block;
-	font-size: 12px;
-	color: #edecec;
-	font-weight: normal;
-	margin-top: 5px;
-	margin-left: 5px;
+#header #sitetite img{
+	margin-left: -36px;
 }
 
 

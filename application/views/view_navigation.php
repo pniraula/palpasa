@@ -1,6 +1,6 @@
 <div id="header">
 		<div id="sitetite">
-			<h1><img src="<?=base_url()?>assets/images/logo.png" alt="palpasa.com" /></a></h1>
+			<img src="<?=base_url()?>assets/images/logo.png" alt="palpasa.com" />
 		</div> 
 		<ul class="navigation">
 			<li><a>Now Playing</a></li>

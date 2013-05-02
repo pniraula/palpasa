@@ -1,4 +1,3 @@
-
 <div class="content_area">
 		<div id="left-panel">
 			<div id="station-wrapper">

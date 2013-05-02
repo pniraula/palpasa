@@ -6,4 +6,5 @@
         });
         return counter;
     };
+   
 })(jQuery);

@@ -8,7 +8,7 @@
 <script type="text/javascript" src="<?=base_url()?>assets/js/libraries/custom-query.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/js/libraries/jquery.nicescroll.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/js/infoBar.js"></script>
-<script type="text/javascript" src="<?=base_url()?>assets/js/welcome.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/js/main.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/js/search.js"></script>
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/controller.css">
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/main.css">
@@ -23,6 +23,18 @@
 			<div id="searchBox">
 				<label>New Station</label>
 				<input id="searchInput" type="text" autocomplete="on" value="type in artist or genre"/>
+			</div>
+		</div>
+		<div id="userInfo-wrapper">
+			<div id="username">
+				<span class="username-arrow"></span>
+				<span>Prabesh Nirauladdddddddddd</span>
+			</div>
+			<div id="userControls">
+				<div class="userControlOption" id="setting"><span class="conrollOption-arrow"></span>My Profile</div>
+				<div class="userControlOption" id="setting"><span class="conrollOption-arrow"></span>Settings</div>
+				<div class="userControlOption" id="setting"><span class="conrollOption-arrow"></span>Help</div>
+				<div class="userControlOption" id="signOutButton">Sign out</div>
 			</div>
 		</div>
 		<div id="music_player">

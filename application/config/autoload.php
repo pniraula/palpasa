@@ -51,8 +51,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
-
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('database', 'session');
 
 
 /*
@@ -112,6 +111,7 @@ $autoload['language'] = array();
 $autoload['model'] = array();
 
 //for url helper
-$autoload['helper'] = array('url');
+$autoload['helper'] = array('url', 'login');
+
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

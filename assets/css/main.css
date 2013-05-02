@@ -197,6 +197,66 @@ ul.navigation a:focus {
 	background-color: #494949;
 	border: none;
 }
+#userInfo-wrapper{
+	position:absolute;
+	right: 0px;
+	z-index: 9;
+	cursor: pointer;
+}
+#username{
+	margin-top: 8px;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	color:#AAA;
+	width: 120px;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background-color: #303030;
+	border: 1px solid #444444;
+	border-style: inset;
+	z-index: 9;	
+}
+#username:hover{
+	background-color: #202020;
+}
+
+.username-arrow{
+	background: url(/palpasa/assets/images/user-menu-down-arrow.png) no-repeat right center;
+	width: 10px;
+	float: right;
+	height: 22px;
+}
+.conrollOption-arrow{
+	background: url(/palpasa/assets/images/user-menu-side-arrow.png) no-repeat right center;
+	width: 10px;
+	float: right;
+	height: 20px;
+	display: none;
+}
+#userControls{
+	width: 120px;
+	display:none;
+	background-color: #202020;
+}
+.userControlOption{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+}
+.userControlOption:hover{
+	background-color: #202020;
+	color: #AAA;
+	border: 1px solid #444444;
+	border-style: inset;
+	
+}
+.userControlOption:hover .conrollOption-arrow{
+	display: block;
+}
 input:focus{
     outline: none;
 }

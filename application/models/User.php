@@ -7,8 +7,6 @@
 		
 		function __construct() {
         	parent::__construct();
-			$this->load->database();
-			$this->load->library('session');
 		}
 		public function signIn($username, $password){
 			$data =array('email'=>'');
@@ -18,12 +16,16 @@
 			   $data['email'] = $row->USER_ID;
 			   $userInfo =  array(
                    'email'     => $row->USER_ID,
-                   'loggedIn' => TRUE,
-                   'theme' =>'mango'
+                   'loggedIn' => TRUE
                );
 			   $this->session->set_userdata($userInfo);
 			}
 			return $data;
+		}
+		public function signOut(){
+			 logOut();
+			 $this->session->set_userdata(array('email' => '', 'loggedIn' => ''));
+			
 		}
 	}
 	

@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="<?=base_url()?>assets/js/libraries/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/js/libraries/custom-query.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/js/libraries/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/js/welcome.js"></script>
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/index.css">
 <title>Palpasa.com</title>
 </head>
@@ -14,7 +16,10 @@
 		<div id="index_container">
 			<div id="left-pane">
 				<div id="logo">
-					<img src="<?=base_url()?>/assets/images/logo.png">
+					<img src="<?=base_url()?>/assets/images/logo.png"><br>
+				</div>
+				<div id="radio">
+					<img src="<?=base_url()?>/assets/images/radio.png">
 				</div>
 				<div id="sign_in">
 					<label class="gen-label">Sign In</label>
@@ -33,9 +38,10 @@
 									<label class="index-link">forgot password?</label>
 								</div>
 							</td>
-							<td><button id="sign-in" class="index-button">Sign In</button></td>
+							<td><button id="signInButton" class="index-button">Sign In</button></td>
 						</tr>
 					</table>
+					<div class="errorMessage" id="signInError"></div>
 				</div>
 				<div id="sign_up">
 					<label class="gen-label">Sign Up</label>
@@ -65,43 +71,15 @@
 							<td><label>and conditions of palpasa.com</label></td>
 						</tr>
 						<tr>
-							<td><button id="sign-in" class="index-button">Clear</button></td>
-							<td><button id="sign-in" class="index-button">Sign Up</button></td>
+							<td><button id="clearButton" class="index-button">Clear</button></td>
+							<td><button id="signUpButton" class="index-button">Sign Up</button></td>
 						</tr>
 					</table>
+					<div class="errorMessage" id="signUpError"></div>
 				</div>
 				<div id="left-panel-footer">
-					<div>Palpasa is a product of <a href="http://vumari.com">vumari</a>.</div>
+					About
 				</div>
 			</div>
-			<div id="right-pane">
-				<h1>Listen to free Nepali Music</h1>
-				<div id="radio-cont">
-					<img id="radio" src="<?=base_url()?>/assets/images/radio.png">
-				</div>
-				<div id="information">
-					<table>
-						<tr>
-							<td><img class="info-ico" src="<?=base_url()?>/assets/images/free.png"/></td>
-							<td>No money, no problem. Palpasa is free and always will be free.</td>
-						</tr>
-						<tr>
-							<td><img class="info-ico" src="<?=base_url()?>/assets/images/unlimited.png"/></td>
-							<td>Get instant access to thousands of Nepali songs, lyrics and videos.</td>
-						</tr>
-						<tr>
-							<td><img class="info-ico" src="<?=base_url()?>/assets/images/personalize.png"/></td>
-							<td>Creating unlimited stations and personalizing them is easy.</td>
-						</tr>
-						<tr>
-							<td><img class="info-ico" src="<?=base_url()?>/assets/images/likedislike.png"/></td>
-							<td>Like/dislike songs for better experience.</td>
-						</tr>
-						<tr>
-							<td><img class="info-ico" src="<?=base_url()?>/assets/images/share.png"/></td>
-							<td>Share music with your friends and family.</td>
-						</tr>
-					</table>
-				</div>
-			</div>
+			
 		</div>

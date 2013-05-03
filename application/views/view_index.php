@@ -26,11 +26,11 @@
 					<table>
 						<tr class="cont">
 							<td><div class="inputLabel">Username</div></td>
-							<td><div class="input-wrap"><input class="inputBox" id="usernameInput" type="email" autocomplete="on" value=""/></div></td>
+							<td><div class="input-wrap"><input class="inputBox signInInput" id="usernameInput" type="email" autocomplete="on" value=""/></div></td>
 						</tr>
 						<tr>
 							<td><div class="inputLabel">Password</div></td>
-							<td><input class="inputBox" id="passwordInput" type="password" autocomplete="off" value=""/></td>
+							<td><input class="inputBox signInInput" id="passwordInput" type="password" autocomplete="off" value=""/></td>
 						</tr>
 						<tr>
 							<td>
@@ -48,26 +48,26 @@
 					<table>
 						<tr class="cont">
 							<td><div class="inputLabel">First Name</div></td>
-							<td><div class="input-wrap"><input class="inputBox" id="firstnameInput" type="text" autocomplete="on" value=""/></div></td>
+							<td><div class="input-wrap"><input class="inputBox signUpInput" id="firstnameInputS" type="text" autocomplete="on" value=""/></div></td>
 						</tr>
 						<tr class="cont">
 							<td><div class="inputLabel">Last Name</div></td>
-							<td><div class="input-wrap"><input class="inputBox" id="lastnameInput" type="text" autocomplete="on" value=""/></div></td>
+							<td><div class="input-wrap"><input class="inputBox signUpInput" id="lastnameInputS" type="text" autocomplete="on" value=""/></div></td>
 						</tr>
 						<tr class="cont">
 							<td><div class="inputLabel">Email Id</div></td>
-							<td><div class="input-wrap"><input class="inputBox" id="emailidInput" type="email" autocomplete="on" value=""/></div></td>
+							<td><div class="input-wrap"><input class="inputBox signUpInput" id="emailidInputS" type="email" autocomplete="on" value=""/></div></td>
 						</tr>
 						<tr class="cont">
 							<td><div class="inputLabel">Password</div></td>
-							<td><div class="input-wrap"><input class="inputBox" id="spasswordInput" type="password" autocomplete="off" value=""/></div></td>
+							<td><div class="input-wrap"><input class="inputBox signUpInput" id="passwordInputS" type="password" autocomplete="off" value=""/></div></td>
 						</tr>
 						<tr>
 							<td><div class="inputLabel">Re-Password</div></td>
-							<td><input class="inputBox" id="srepasswordInput" type="password" autocomplete="off" value=""/></td>
+							<td><div class="input-wrap"><input class="inputBox signUpInput" id="repasswordInputS" type="password" autocomplete="off" value=""/></div></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"/><label>I agree terms </label></td>
+							<td><input id="accept" type="checkbox"/><label>I agree terms </label></td>
 							<td><label>and conditions of palpasa.com</label></td>
 						</tr>
 						<tr>

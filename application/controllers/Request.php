@@ -16,4 +16,12 @@ class Request extends CI_Controller {
 		$obj =  $this->User->signOut();
 		echo $this->session->userdata('email');
 	}
+	public function signUp(){
+		$this->load->model('User');
+		$firstName = $this->input->post('firstName');
+		$lastName = $this->input->post('lastName');
+		$email = $this->input->post('emailId');
+		$password = $this->input->post('pass');
+		echo $this->User->signUp($firstName, $lastName, $email, $password);
+	}
 }

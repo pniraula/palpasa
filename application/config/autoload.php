@@ -63,7 +63,8 @@ $autoload['libraries'] = array('database', 'session');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array();
+
+$autoload['helper'] = array('url', 'login');
 
 
 /*
@@ -111,7 +112,6 @@ $autoload['language'] = array();
 $autoload['model'] = array();
 
 //for url helper
-$autoload['helper'] = array('url', 'login');
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

@@ -1,20 +1,27 @@
 //This file consists of all the javascripts required for initial welcome page of the sie.
 
 $(document).ready(function(){
+	//sign in
 	$("#signInButton").click(function(){
-		$.post("/palpasa/request/logIn",{user:$("#usernameInput").val(), password: $("#passwordInput").val()},function(data){
-			if(data.length<1){
-				//login error
-				$("#signInError").html("Oops! No match found.");
-				 setTimeout(function(){
-        				$("#signInError").html("");
-    			}, 2000);
-			}
-			else{
-				window.location ="/palpasa/site/home";
-			}
-		});
+		$.signIn();
 	});
-	
+	//sign up
+	$("#signUpButton").click(function(){
+		$.signUp();
+	});
+	//enterkey press 
+	$(document).keypress(function(e){
+		if(e.keyCode == 13){
+			//sign in
+			if($(".signInInput").is(":focus")){
+				$.signIn();
+			}
+			//sign up
+			if($(".signUpInput").is(":focus")){
+				$.signUp();
+			}
+		}
+	});
+	 $("#usernameInput").focus();
 	 $("#station-wrapper").niceScroll({cursorcolor:"#292929"});
 });

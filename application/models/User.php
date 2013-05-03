@@ -25,7 +25,23 @@
 		public function signOut(){
 			 logOut();
 			 $this->session->set_userdata(array('email' => '', 'loggedIn' => ''));
-			
+		}
+		public function signUp($firstname, $lastname, $email, $password){
+			$query_string = "INSERT INTO users (FIRST_NAME, LAST_NAME, EMAIL_ID, PASSWORD)
+								values(?, ?, ?, ?)";
+			$message ="";
+			$values = array($firstname, $lastname, $email, $password);
+			$query = $this->db->query($query_string, $values);
+			$mess = $this->db->_error_message();
+			if ($query) {
+   				 $message =  true;
+			}else{
+				if (strpos($mess, 'Duplicate') !== FALSE)
+   					 echo 'Email already in use. Try forgot password.';
+				else
+    				 echo "Unknown error. Please try again";
+			}
+			echo $message;
 		}
 	}
 	

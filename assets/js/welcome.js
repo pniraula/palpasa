@@ -23,5 +23,5 @@ $(document).ready(function(){
 		}
 	});
 	 $("#usernameInput").focus();
-	 $("#station-wrapper").niceScroll({cursorcolor:"#292929"});
+	
 });

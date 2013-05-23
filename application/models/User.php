@@ -10,21 +10,21 @@
 		}
 		public function signIn($username, $password){
 			$data =array('email'=>'');
-			$query = $this->db->query("select * from users where USER_ID = '$username' and PASSWORD ='$password'");
+			$query = $this->db->query("select * from users where EMAIL_ID = '$username' and PASSWORD ='$password'");
 			foreach($query->result() as $row)
 			{
 			   $data['email'] = $row->USER_ID;
 			   $userInfo =  array(
-                   'email'     => $row->USER_ID,
-                   'loggedIn' => TRUE
+                   'userId'		=> $row->USER_ID,
+                   'email'		=> $row->EMAIL_ID,
+                   'loggedIn'	=> TRUE
                );
 			   $this->session->set_userdata($userInfo);
 			}
-			return $data;
 		}
 		public function signOut(){
 			 logOut();
-			 $this->session->set_userdata(array('email' => '', 'loggedIn' => ''));
+			 $this->session->set_userdata(array('email' => '', 'userId' => '', 'loggedIn' => ''));
 		}
 		public function signUp($firstname, $lastname, $email, $password){
 			$query_string = "INSERT INTO users (FIRST_NAME, LAST_NAME, EMAIL_ID, PASSWORD)

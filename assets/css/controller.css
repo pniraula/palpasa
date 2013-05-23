@@ -1,14 +1,70 @@
 #controller-wrapper{
 	text-align: center;
 }
+#music_player{
+	height: 100%;
+}
+#music-controller{
+	height: 100%;
+}
+#controllers-icon{
+	height: 100%;
+	text-align: left;
+}
 .controller-icon{
 	margin-top: 5px;
 	height: 30px;
 	cursor: pointer;
 }
 .controller-icon:hover{
-	opacity: 0.5;
+	opacity: 0.3;
 }
 .controller-icon:active{
 	opacity: 0.1;
+}
+#previous-icon{
+	margin-left: 200px;
+}
+.ui-slider a {outline:none;}
+.ui-slider-handle{display: none}
+div.ui-slider-range.ui-widget-header {
+    background: #202020;
+    border: none;
+}
+
+#volume-cont{
+	width: 30px;
+	height: 25px;
+	z-index: 99999;
+	margin-top: -33px;
+	margin-left: 300px;
+	cursor: pointer;
+}
+#volume-cont:hover{
+	width: 150px;
+	background-color: #202020;
+	border:1px solid #202020;
+	border-style: inset;
+}
+
+#volume-cont:hover #volume-max-icon{
+	display: block;
+}
+#volume-cont:hover #slider{
+	display: block;
+}
+#slider{
+	display: none;
+	height: 6px;
+	width: 85px;
+	margin-left: 30px;
+	margin-top: -18px;
+}
+#volume-icon{
+	margin-top: -2px;
+}
+#volume-max-icon{
+	float: right;
+	display: none;
+	margin-top: -19px;
 }

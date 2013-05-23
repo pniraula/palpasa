@@ -33,7 +33,7 @@
 			}
 		});
    };
-    $.signUp = function(){
+   $.signUp = function(){
 	    var errorMessage ="";
 	    var firstname = $("#firstnameInputS").val();
 	    var lastname = $("#lastnameInputS").val();
@@ -85,5 +85,27 @@
 	    	}
 	    }
    };
+
+   $.loading={
+   		'start' : function(mess){
+   			$("#loading").show();
+   			$("#loading_message").html(mess);
+   		},
+   		'end' : function(){
+   			$("#loading").fadeOut();
+   			$("#loading_message").html();
+   		}
+   }
    
+   //randomize array
+   Array.prototype.shuffle = function () {
+	    for (var i = this.length - 1; i > 0; i--) {
+	        var j = Math.floor(Math.random()* (i + 1));
+	        var tmp = this[i];
+	        this[i] = this[j];
+	        this[j] = tmp;
+	    }
+	
+	    return this;
+	}
 })(jQuery);

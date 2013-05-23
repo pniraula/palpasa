@@ -19,6 +19,7 @@
  background-color: #525252;
  z-index: 8; 
 }
+
 #songInfoBar-wrapper:hover #left-arrow .arrow-icon{
  display: block;
 }
@@ -93,9 +94,35 @@
  box-sizing: border-box;         /* Opera/IE 8+ */
  padding: 0px 10px;
  line-height: 30px;
+ z-index: 7;
+}
+.station-arrow{
+	background: url('/palpasa/assets/images/remove.png') no-repeat right center;
+	width: 15px;
+	float: right;
+	right: 0px;
+	height: 100%;
+	z-index: 9;
+	opacity: 0.5;
+	display: none;
+}
+.station-arrow:hover{
+	opacity: 0.9;
+}
+.station-arrow:active{
+	opacity: 0.1;
+}
+.station-name{
+	width: 100%;
 }
 .station:hover{
  background-color:#626262;
+}
+.station:hover .station-arrow{
+ 	display: block;
+}
+.userControlOption:hover .station-arrow{
+	display: block;
 }
 .station:active{
  background-color:#727272;
@@ -104,4 +131,57 @@
  border-top: 2px solid #292929;
  height: 100%;
  width: 100%;
+}
+.current{
+	border: 2px solid #000000;
+	border-top: none;
+}
+
+.progressBar{
+	height: 5px;
+	background-color: #303030;
+	display: none;
+}
+.current .progressBar{
+	display: block;
+}
+.current .progressBar .progress{
+	height: 100%;
+	background-color: #FFFFFF;
+}
+.artistImg{
+	height: 90px;
+}
+.songCard .songInfo{
+	height: 90px;
+	background-color: #202020;
+	color: white;
+	text-align:left;
+	opacity: 0.9;
+	display: none;
+}
+.songCard:hover .songInfo{
+	display: block;
+}
+.songInfoVal{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	color:#AAA;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	z-index: 9;	
+}
+.rating{
+	height: 30px;
+}
+.thumbs{
+	height: 20px;
+	cursor: pointer;
+}
+.thumbs:hover{
+	opacity: 0.5;
 }

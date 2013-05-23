@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 	function Scroller(){
 		var scrolling = false;
 		this.leftArrow = $("#left-arrow");
@@ -13,6 +13,9 @@ $(document).ready(function(){
 				 containerWidth +=10;
 			});
 			$(".scrollDiv").width(containerWidth+190);
+		}
+		this.reset = function(){
+			$(".songCard").remove();
 		}
 		this.left = function(){
 			var margin = $(".scrollDiv").css("margin-left").replace("px", "");
@@ -49,16 +52,7 @@ $(document).ready(function(){
 	  			scroller.right();
 		});
 	}
-	var scroller = new Scroller();
-	scroller.load();
-	$("#add").click(function(){
-		var totalCards = $(".songCard").countElement()+1;
-		$('.scrollDiv').animate({marginLeft: '190px' }, 500,function(){
-			$(this).css({'margin-left':'0px'});
-			$(this).prepend('<div class="songCard"><div class="songInfo">'+totalCards+'</div></div>');
-			scroller.load();
-		});
-	});
+$(document).ready(function(){
 	function fixDiv() {
 	    var $div = $("#music_player");
 	    if ($(window).scrollTop() > $div.data("top")) { 

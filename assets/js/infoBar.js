@@ -53,15 +53,15 @@
 		});
 	}
 $(document).ready(function(){
-	function fixDiv() {
+	/*function fixDiv() {
 	    var $div = $("#music_player");
 	    if ($(window).scrollTop() > $div.data("top")) { 
-	        $('#music_player').css({'position': 'fixed', 'top': '0', 'width': '640px'}); 
+	        $('#music_player').css({'position': 'fixed', 'top': '0'}); 
 	    }
 	    else {
-	        $('#music_player').css({'position': 'static', 'top': 'auto', 'width': '640px'});
+	        $('#music_player').css({'position': 'static', 'top': 'auto'});
 	    }
 	}
 	$("#music_player").data("top", $("#music_player").offset().top); // set original position on load
-	$(window).scroll(fixDiv);
+	$(window).scroll(fixDiv);*/
 });

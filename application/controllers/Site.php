@@ -24,6 +24,7 @@ class Site extends CI_Controller {
 			$data['stations'] = $stationData;
 			$this->load->view('view_header.php');
 			$this->load->view('view_navigation.php');
+			$this->load->view('SongInfoBar.php');
 			$this->load->view('view_home.php', $data);
 			$this->load->view('view_footer.php');
 		}else{

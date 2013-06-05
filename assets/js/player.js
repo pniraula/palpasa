@@ -25,7 +25,7 @@ $(document).ready(function(){
 			$("#volume-icon").attr("src", "http://localhost/palpasa/assets/images/controls/mute.png");
 		  }
 	});
-	$("#play-icon").click(function(){
+	/*$("#play-icon").click(function(){
 		if(song_list.length>0){
 			if(song.paused){
 				song.play();
@@ -51,6 +51,34 @@ $(document).ready(function(){
 			previous();
 		}
 	});
+	*/
+	$(".icon-play").click(function(){
+		if(song_list.length>0){
+			if(song.paused){
+				song.play();
+				$(".icon-play").attr("class", "icon-pause");
+			}
+			else{
+			$(".icon-pause").attr("class", "icon-play");
+				song.pause();
+			}
+		}else{
+			alert("Please choose a station or create one");
+		}
+	});
+	
+	$("icon.next").click(function(){
+		if(!active){
+			active = true;
+			next();
+		}
+	});
+	$(".icon-previous").click(function(){
+		if(!active){
+			active = true;
+			previous();
+		}
+	});
 	$("#volume-icon").click(function(){
 		if(song.muted){
 			song.muted = false;
@@ -66,6 +94,11 @@ $(document).ready(function(){
 		song.muted = false;
 		muted = false;
 		$( "#slider" ).slider({ value: 100});
+	});
+	$("#controllers-icon div").mouseover(function(){
+		$(this).addClass('icon-hover');
+	}).mouseleave(function(){
+		$(this).removeClass('icon-hover');
 	});
 	$("#slider").slider({
 	    orientation: "horizontal",
@@ -272,14 +305,14 @@ $(document).ready(function(){
 		$("#searchSuggestion").hide();
 	});
 	function completed(){
-		$(".controller-icon").css({'visibility':'visible'});
+		//$(".controller-icon").css({'visibility':'visible'});
 		if(song_list.length==0){
-			$(".controller-icon").css({'visibility':'hidden'});
+			//$(".controller-icon").css({'visibility':'hidden'});
 		}
 		else if(index==song_list.length-1){
-			$("#forward-icon").css({'visibility':'hidden'});
+			//$("#forward-icon").css({'visibility':'hidden'});
 		}else if(index==0){
-			$("#previous-icon").css({'visibility':'hidden'});
+			//$("#previous-icon").css({'visibility':'hidden'});
 		}
 	}
 });
